@@ -5,8 +5,15 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "handcuffs.refmap.json",
   "mixins": [
+    "MixinPlayerEntity",
+    "MixinServerPlayNetHandler"
   ],
   "client": [
+    "MixinClientPlayerEntity",
+    "MixinFirstPersonRenderer",
+    "MixinGameRenderer",
+    "MixinMinecraftClient",
+    "MixinPlayerRenderer"
   ],
   "injectors": {
     "defaultRequire": 1

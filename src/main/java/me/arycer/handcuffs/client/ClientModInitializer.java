@@ -1,4 +1,4 @@
-package me.arycer.handcuffs;
+package me.arycer.handcuffs.client;
 
 
 import dev.kosmx.playerAnim.api.layered.IAnimation;
@@ -10,7 +10,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-import static me.arycer.handcuffs.HandcuffModInitializer.MOD_ID;
+import static me.arycer.handcuffs.SharedModInitializer.MOD_ID;
 
 @SuppressWarnings("unused")
 @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)

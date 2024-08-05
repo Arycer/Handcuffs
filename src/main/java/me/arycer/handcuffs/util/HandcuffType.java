@@ -1,6 +1,7 @@
-package me.arycer.handcuffs.objects;
+package me.arycer.handcuffs.util;
 
 public enum HandcuffType {
     FRONT,
-    BACK
+    BACK,
+    FREE
 }

@@ -6,17 +6,15 @@ import net.minecraft.item.Item;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.network.GeckoLibNetwork;
 import software.bernie.geckolib3.network.ISyncable;
 import software.bernie.geckolib3.util.GeckoLibUtil;
 
 import java.util.concurrent.Callable;
 
-public class HandcuffsItem extends Item implements IAnimatable, ISyncable {
-		private static final int ACTIVATE_ANIM_STATE = 0;
-    	public final AnimationFactory factory = GeckoLibUtil.createFactory(this);
+public class BaseHandcuffsItem extends Item implements IAnimatable, ISyncable {
+    public final AnimationFactory factory = GeckoLibUtil.createFactory(this);
     
-    	public HandcuffsItem() {
+    	public BaseHandcuffsItem() {
 			super(new Properties()
 					.durability(-1)
 					.stacksTo(1)
@@ -27,8 +25,6 @@ public class HandcuffsItem extends Item implements IAnimatable, ISyncable {
 					return renderer;
 				}
 			}));
-
-			GeckoLibNetwork.registerSyncable(this);
     	}
     
     	@Override

@@ -2,8 +2,8 @@ package me.arycer.handcuffs.item;
 
 import software.bernie.geckolib3.network.GeckoLibNetwork;
 
-public class FrontHandcuffsItem extends LockedHandcuffsItem {
-    public FrontHandcuffsItem() {
+public class BackHandcuffsItem extends LockedHandcuffsItem {
+    public BackHandcuffsItem() {
         super();
         GeckoLibNetwork.registerSyncable(this);
     }
